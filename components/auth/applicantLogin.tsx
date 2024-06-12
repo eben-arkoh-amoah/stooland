@@ -12,9 +12,9 @@ export default function ApplicantLoginComponent() {
 const [shouldShowPassword, setShouldShowPassword] = useState<boolean>(true  );
     
     return (
-        <main style={{ height: "97%", width: "68%",   justifyContent: "center", alignItems: "center", flexDirection: "row", display: "flex" }}>
+        <main style={{ height: "100%", width: "68%",   justifyContent: "center", alignItems: "center", flexDirection: "row", display: "flex" }}>
             <div style={{ height: "100%", display: "flex", alignItems: "center"}}>
-                <Image src={king} width={432} alt="King" style={{margin: "auto"}}/>
+                <Image src={king} width={460} alt="King" style={{margin: "auto"}}/>
             </div>
             <div style={{ alignItems: "center", width: "56%", height: "97%", background: "#FFFFFF", }}>
                 <Logo />
