@@ -6,7 +6,8 @@ import Logo from "@/components/utils/logo";
 import Link from "next/link";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import AllocationText from "../utils/alocationCert";
-import { useState } from "react";  
+import { useState } from "react"; 
+import { PrimaryButtonContainer } from "../utils/primaryButton"; 
 
 export default function UserLoginComponent() {
     const [shouldShowPassword, setShouldShowPassword] = useState(true);
@@ -53,11 +54,11 @@ export default function UserLoginComponent() {
                             <Link style={{color: "#039855", fontSize: 13, fontWeight: "500"}}href={"/login/forgotPassword"}>Forgot password</Link>
                         </div>
             </div>
-          <div style={{width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", paddingTop: 10}}>
-            <button style={{background: "#039855", borderRadius: 5, width: "75%", padding: 5, justifyContent: "center", color: "#fff", fontWeight: "600", fontSize: 14, textAlign: "center"}} disabled>
-               Send code
+          <PrimaryButtonContainer>
+            <button style={{ width: "100%", padding: 5, justifyContent: "center",  fontWeight: "600", fontSize: 14, textAlign: "center"}} onClick={(e)=>e.preventDefault()}>
+              Send code
             </button>         
-          </div>
+           </PrimaryButtonContainer>
            <div style={{position: "absolute", bottom: 20, right: 343}}>
           <p style={{fontWeight: "500", fontSize: 10, color: "#98A2B3", }}>© 2024 Allocation Certification. All rights reserved.</p>
         </div>

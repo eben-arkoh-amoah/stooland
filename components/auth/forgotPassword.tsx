@@ -6,7 +6,7 @@ import Logo from "@/components/utils/logo";
 import Link from "next/link";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import AllocationText from "../utils/alocationCert";
- 
+import { PrimaryButtonContainer } from "../utils/primaryButton"; 
 
 export default function ForgotPasswordComponent() {
    
@@ -32,11 +32,11 @@ export default function ForgotPasswordComponent() {
           </fieldset>
             </div>
           <div style={{width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", paddingTop: 10}}>
-            <button style={{background: "#039855", borderRadius: 5, width: "75%", padding: 5, justifyContent: "center", color: "#fff", fontWeight: "600", fontSize: 14, textAlign: "center"}} disabled>
+            <Link style={{background: "#039855", borderRadius: 5, width: "75%", padding: 5, justifyContent: "center", color: "#fff", fontWeight: "600", fontSize: 14, textAlign: "center"}} href={"/login/resetPassword"}>
                Submit
-                        </button>              
+                        </Link>              
                     </div>
-                    <Link style={{display: "flex", alignItems: "center", justifyContent: "center", gap: 5, alignSelf: "center", justifySelf: "center"}} href={""}>
+                    <Link style={{display: "flex", alignItems: "center", justifyContent: "center", gap: 5, alignSelf: "center", justifySelf: "center"}} href={"/login/user"}>
                         <IoIosArrowRoundBack size={22} color={"#039855"} />
                         <p style={{fontWeight: "600", fontSize: 11, color: "#039855"}}>Back to log in</p>
                     </Link>
