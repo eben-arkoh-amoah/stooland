@@ -29,7 +29,7 @@ export default function UserLoginComponent() {
           </div>
           <div style={{display: "flex", justifyContent: "center", width: "100%", gap: 15, flexDirection: "column"}}>
              <fieldset style={{display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "column", gap: 5, width: "75%", margin: "auto"}}>
-            <label htmlFor="userLoginEmail" style={{fontSize: 13, color: "#344054", fontWeight: "500"}}>Phone</label>
+            <label htmlFor="userLoginEmail" style={{fontSize: 13, color: "#344054", fontWeight: "500"}}>Email</label>
             <input type="text" id="userLoginEmail" placeholder="Enter your email" style={{ borderWidth: 1, borderColor: "#D0D5DD", boxShadow: "2px 2px 0px #1018280D", borderRadius: 8, padding: 4, paddingLeft: 12, fontSize: 14, fontWeight: "400", color:"#667085", width: "100%", outline: "none"}} />
           </fieldset>
             <fieldset style={{ display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "column", gap: 5, width: "75%", margin: "auto", position: "relative" }}>
@@ -50,7 +50,7 @@ export default function UserLoginComponent() {
                             }} />
                         </div>      
                         <div>
-                            <Link style={{color: "#039855", fontSize: 13, fontWeight: "500"}}href={""}>Forgot password</Link>
+                            <Link style={{color: "#039855", fontSize: 13, fontWeight: "500"}}href={"/login/forgotPassword"}>Forgot password</Link>
                         </div>
             </div>
           <div style={{width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", paddingTop: 10}}>
