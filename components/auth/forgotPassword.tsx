@@ -10,13 +10,14 @@ import { PrimaryButtonContainer } from "../utils/primaryButton";
 import { useForm, Controller } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useRouter } from "next/navigation";
 
 type FormData = {
     email: string;
 };
 
 export default function ForgotPasswordComponent() {
-
+    const router = useRouter();
     const validationSchema = yup.object().shape({
         email: yup.string().email('Invalid email format').required('Email is required'),
     });
@@ -29,6 +30,7 @@ export default function ForgotPasswordComponent() {
     // Define the form submission handler
     const onSubmit = (data: FormData) => {
         console.log(data);
+        router.push("/login/resetPassword");
     };
 
     return (
@@ -65,6 +67,7 @@ export default function ForgotPasswordComponent() {
                         </fieldset>
                     </div>
                     <div style={{ width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", paddingTop: 10 }}>
+                        
                         <button type="submit" style={{ background: "#039855", borderRadius: 5, width: "75%", padding: 5, justifyContent: "center", color: "#fff", fontWeight: "600", fontSize: 14, textAlign: "center" }}>
                             Submit
                         </button>
