@@ -65,7 +65,7 @@ const [shouldShowConfirmPassword, setShouldShowConfirmPassword] = useState<boole
                Register
             </button>
             <div style={{width: "77.5%", paddingTop: 5}}>
-               <p style={{margin: "auto", display: "flex", justifyContent: "center"}}><span style={{fontSize: 13, fontWeight: "500", color: "#667085"}}>Already have an account?</span><Link href={"/login/applicant"} style={{fontSize: 13, fontWeight: "500", color: "#039855", paddingLeft: 10}}>Log in</Link></p>
+               <p style={{margin: "auto", display: "flex", justifyContent: "center"}}><span style={{fontSize: 13, fontWeight: "500", color: "#667085"}}>Already have an account?</span><Link href={"/login/user"} style={{fontSize: 13, fontWeight: "500", color: "#039855", paddingLeft: 10}}>Log in</Link></p>
             </div>
           </div>
            <div style={{position: "absolute", bottom: 20, right: 343}}>
